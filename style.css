@@ -1,5 +1,5 @@
 html {
-    font-size: 90%;
+    font-size: 100%;
 }
 
 :root {
@@ -62,7 +62,8 @@ h3 {
 
 p,
 ul,
-ol {
+ol,
+table {
     font-size: clamp(.2rem, .6rem + 1vw, 2rem);
 }
 
@@ -77,6 +78,9 @@ ol {
 }
 
 
+.parent {
+    padding: 2em 0;
+}
 
 .container {
     width: 80%;
@@ -129,7 +133,7 @@ ol {
     position: relative;
 }
 
-.ingredients-meta li::before{
+.ingredients-meta li::before {
     content: "\2022";
     color: var(--brown800);
     font-size: 2em;
@@ -138,7 +142,7 @@ ol {
     top: -.3em;
 }
 
-.instructions-meta li::marker{
+.instructions-meta li::marker {
     color: var(--brown800);
     font-weight: 700;
 }
@@ -148,6 +152,21 @@ ol {
     background-color: var(--white);
     border-bottom: solid 1px var(--stone150);
     padding-bottom: .6em;
+}
+
+.nutrition-data {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition-data td:not(tr:last-child td) {
+    border-bottom: solid 1px var(--stone150);
+    padding-bottom: .5em;
+}
+
+.nutrition-data tr td:last-child {
+    color: var(--brown800);
+    font-weight: 600;
 }
 
 
@@ -164,4 +183,25 @@ ol {
 
 
 
-@media screen and (min-width: 450px) {}
+@media screen and (min-width: 550px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .container {
+        width: 50%;
+        padding: 1.9em;
+    }
+
+    html{
+        font-size: 85%;
+    }
+}

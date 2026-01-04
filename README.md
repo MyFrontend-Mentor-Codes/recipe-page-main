@@ -21,9 +21,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 
 ### The challenge
-1. Build out this social links profile and get it looking as close to the design as possible.
-2. Users should be able to see hover and focus states for all interactive elements on the page
-3. Reduce the font size for smaller screens without using media queries.
+1. Build out the recipe page and get it looking as close to the design as possible.
+2. Reduce the font size for smaller screens without using media queries.
 
 ### Screenshot
 ./assets/images/myscreenshot.png
@@ -34,7 +33,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 https://www.frontendmentor.io/solutions/social-links-profile-page-using-semantic-html-and-media-queries-COVHwEvdSR
 
 - Live Site URL: 
-https://asociallinksprofile.netlify.app/
+https://arecipe-page.netlify.app/
 
 
 
@@ -42,36 +41,48 @@ https://asociallinksprofile.netlify.app/
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - Mobile-first workflow
+- Pseudo-elements
 
 
 ### What I learned
+-- Pseudo elements
+-- Styling the bullets of a list element differently from the copy of the content
 
-================================
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <ul class="ingredients-meta">
+    <li>2-3 large eggs</li>
+    <li>Salt, to taste</li>
+    <li>Pepper, to taste</li>
+    <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+</ul>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.ingredients-meta li {
+    position: relative;
+}
+
+.ingredients-meta li::before {
+    content: "\2022";
+    color: var(--brown800);
+    font-size: 2em;
+    position: absolute;
+    left: -.6em;
+    top: -.3em;
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+  No js code
 }
 ```
-==========================================
 
 ### Continued development
-Things I want to learn further
 
 
 
 ### Useful resources
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
 
 
 ## Author
