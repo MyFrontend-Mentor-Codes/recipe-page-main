@@ -20,9 +20,9 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--grey900);
-    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--stone100);
+    color: var(--stone600);
 }
 
 p,
@@ -40,19 +40,117 @@ li {
 
 
 h1 {
-    font-size: clamp(1rem, .6rem + 2vw, 2rem);
+    font-family: 'Young Serif', serif;
+    font-size: clamp(1rem, .9rem + 2vw, 2rem);
     font-weight: 500;
+    line-height: 1.1;
+    color: var(--stone900);
 }
 
 h2 {
-    font-size: clamp(.3rem, .6rem + 1vw, 2rem);
-    color: var(--green);
-    font-weight: 400;
+    font-family: 'Young Serif', serif;
+    font-size: clamp(.3rem, 1rem + 1vw, 2rem);
+    font-weight: 500;
+    color: var(--brown800);
 }
 
-p {
-    font-size: clamp(.2rem, .5rem + 1vw, 2rem);
+h3 {
+    font-size: clamp(.3rem, .8rem + 1vw, 2rem);
+    font-weight: 600;
+    color: var(--rose800);
 }
+
+p,
+ul,
+ol {
+    font-size: clamp(.2rem, .6rem + 1vw, 2rem);
+}
+
+
+
+/*===============================*/
+/*===============================*/
+/* Utility Classes */
+.bold {
+    font-weight: 600;
+    color: var(--stone900);
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 9px;
+    background-color: var(--white);
+    padding: 1.4em;
+}
+
+.the-meal {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.timing {
+    background-color: var(--rose50);
+    padding: 1em;
+    border-radius: 9px;
+}
+
+.timing-meta,
+.ingredients-meta {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-left: 1.2em;
+}
+
+.instructions-meta {
+    margin: 0;
+    padding: 0;
+    padding-left: 1.2em;
+}
+
+.timing-meta li {
+    position: relative;
+    padding-left: .5em;
+}
+
+.timing-meta li::before {
+    content: "\2022";
+    color: var(--rose800);
+    font-size: 2em;
+    position: absolute;
+    left: -.6em;
+    top: -.3em;
+}
+
+.ingredients-meta li {
+    position: relative;
+}
+
+.ingredients-meta li::before{
+    content: "\2022";
+    color: var(--brown800);
+    font-size: 2em;
+    position: absolute;
+    left: -.6em;
+    top: -.3em;
+}
+
+.instructions-meta li::marker{
+    color: var(--brown800);
+    font-weight: 700;
+}
+
+.ingredients,
+.instructions {
+    background-color: var(--white);
+    border-bottom: solid 1px var(--stone150);
+    padding-bottom: .6em;
+}
+
+
 
 .attribution {
     font-size: 11px;
@@ -66,12 +164,4 @@ p {
 
 
 
-@media screen and (min-width: 450px) {
-    .profile-card {
-        width: 60%;
-    }
-
-    html {
-        font-size: 80%
-    }
-}
+@media screen and (min-width: 450px) {}
