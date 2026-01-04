@@ -30,7 +30,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: 
-https://www.frontendmentor.io/solutions/social-links-profile-page-using-semantic-html-and-media-queries-COVHwEvdSR
+https://www.frontendmentor.io/solutions/meal-recipe-page-built-using-pseudo-elements-and-custom-css-variables-Bg4psyZAmf
 
 - Live Site URL: 
 https://arecipe-page.netlify.app/
